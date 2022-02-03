@@ -14,7 +14,6 @@ function frame() {
     padRight.draw(ctx);
     padLeft.draw(ctx);
     kolo();
-    wynik();
     // odbijanie prawa paleta
     if (ball.dx > 0) {
         if ((ball.cy <= (1 / 5 * padRight.h)) && (ball.cy >= padRight.y)) {
@@ -132,7 +131,7 @@ function keyup(event) {
 function rozpocznijText() {
     ctx.fillStyle = 'white';
     ctx.font = "55px Anton"
-    ctx.fillText("Wciśnij Spacje aby zacząć", 200, 370);
+    ctx.fillText("Press space to start", 200, 370);
 }
 function GameOver() {
     ctx.fillStyle = 'white';
