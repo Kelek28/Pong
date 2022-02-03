@@ -15,20 +15,11 @@ class Ball {
     }
     move() {
 
-        // //prawo
-        // if ((this.dx > 0) && (this.cx + this.dx > 999 - this.r)) {
-        //     this.dx = -this.dx;
-        // }
-
-        //dol
+        // down
         if ((this.dy > 0) && (this.cy + this.dy > 719 - this.r)) {
             this.dy = -this.dy;
         }
-        // // lewo
-        // if ((this.dx < 0) && (this.cx + this.dx < this.r)) {
-        //     this.dx = -this.dx;
-        // }
-        //gora
+        // up
         if ((this.dy < 0) && (this.cy + this.dy < this.r)) {
             this.dy = -this.dy;
         }
